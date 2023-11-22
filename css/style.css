@@ -47,6 +47,7 @@ textarea {
 html,
 body {
     color: #898989;
+    background-color: #f5f2f0;
     font-size: 15px;
     font-family: 'Quicksand', sans-serif;
     line-height: normal;
@@ -361,7 +362,7 @@ h2 {
 
 h3 {
     font-size: 24px;
-    color: #484949;
+    color: #B0A695;
     line-height: normal;
     font-weight: 600;
     text-transform: none;
@@ -2091,7 +2092,7 @@ form#commant_form div.field textarea.custom_field {
 -------------------------------------------------------------------*/
 
 footer {
-    background-color: #fff;
+    background-color: #f5f2f0;
     padding: 0 115px; 
 }
 
@@ -8685,6 +8686,7 @@ form button:focus {
     padding: 20px 20px 0;
     box-shadow: 0 0px 20px 0px rgba(0,0,0,.10);
     margin-top: 40px;
+    background-color: #F5F5F5;
 }
 
 .decorate_blog_bt {
@@ -8910,7 +8912,7 @@ form button:focus {
 
 #inner_pade.banner-slider::after {
     width: 40%;
-    background: #6b6c70;
+    background: #B0A695;
     position: absolute;
     left: 0;
     top: 0;
@@ -9005,4 +9007,17 @@ section .cont_info span {
     margin-top: 10px;
 }
 
-
+.decorated-section {
+    position: relative;
+    padding-left: 20px; /* Adjust the padding to control the distance between the text and the decoration */
+  }
+  
+.decorated-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 4px; /* Adjust the width of the decorative line */
+background-color: #3498db; /* Adjust the color of the decorative line */
+}

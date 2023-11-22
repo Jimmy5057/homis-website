@@ -48,8 +48,8 @@
             <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</i></a></li>
-            <li><a href="what_we_do.html">Why Us</a></li>
-            <li><a href="testimonial.html">Packages</a></li>
+            <li><a href="why_us.html">Why Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
             <li><a href="contact.html">Contact Us</a></li>
          </ul>
       </div>
@@ -72,7 +72,7 @@
       <!-- end header -->
 
       <!-- Start Banner Slider -->
-      <div class="banner-slider">
+      <div class="banner-slider" id="home">
          <div class="container-fluid">
             <div class="row">
                <div id="slider_main" class="carousel slide" data-ride="carousel">
@@ -86,7 +86,7 @@
                               <a class="bt_main" href="contact.html">Contact Us</a>
                            </div>
                            <div class="right_blog_top">
-                              <img src="img/slide1_right.png" alt="#" />
+                              <img src="images/slider_img2.jpg" alt="#" height="572px" width="381px"/>
                            </div>
                         </div>
                      </div>
@@ -98,7 +98,7 @@
                               <a class="bt_main" href="contact.html">Contact Us</a>
                            </div>
                            <div class="right_blog_top">
-                              <img src="img/slide1_right.png" alt="#" />
+                              <img src="images/slider_img3.jpg" alt="#" height="572px" width="381px"/>
                            </div>
                         </div>
                      </div>
@@ -120,15 +120,15 @@
       <!-- End Banner Slider -->
 
       <!-- 'About Us' section -->
-      <section class="layout_padding">
-         <div class="container">
+      <section class="layout_padding" id="aboutUs" style="background-image: url(/img/bg_about_us.png);">
+         <div class="container wow fadeInDown">
             <div class="row">
                <div class="col-md-12">
                   <div class="row">
                      <div class="row">
                         <div class="col-md-7 col-12 p-relative r-left">
                            <div class="full back_blog text_align_center padding_right_left_15">
-                              <img src="images/about_img.png" alt="#" />
+                              <img src="img/about_us.png" width="550px" height="735px" alt="#" />
                            </div>
                         </div>
                         <div class="col-md-5 col-12">
@@ -152,8 +152,8 @@
       <!-- end section -->
 
       <!-- 'Why Us' section -->
-      <section class="layout_padding">
-         <div class="container mb-5 wow fadeInDown">
+      <section class="layout_padding" style="background-image: url(/img/bg_why_us.png);" id="whyUs">
+         <div class="container mb-5 wow fadeInDown" style="min-height: 650px;">
             <div class="row">
                <div class="col-md-12">
                   <div class="full heading_s1">
@@ -162,23 +162,23 @@
                   </div>
                </div>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/sm1.png" alt="#" />
-                     <a class="decorate_blog_bt" href="hd.html">Free Design</a>
+                     <img src="images/why_us_img1.png" alt="#" />
+                     <a class="decorate_blog_bt" href="why_us.html">Free Design</a>
                   </div>
                </div>
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/sm2.png" alt="#" />
-                     <a class="decorate_blog_bt" href="od.html">Ready in 2 weeks</a>
+                     <img src="images/why_us_img2.png" alt="#" />
+                     <a class="decorate_blog_bt" href="why_us.html">Ready in 2 weeks</a>
                   </div>
                </div>
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/sm3.png" alt="#" />
-                     <a class="decorate_blog_bt" href="fd.html">Affordable</a>
+                     <img src="images/why_us_img3.png" alt="#" />
+                     <a class="decorate_blog_bt" href="why_us.html">Affordable</a>
                   </div>
                </div>
             </div>
@@ -193,9 +193,9 @@
       </section>
       <!-- end section -->
 
-      <!-- section -->
+      <!-- 'Makeover package' section -->
       <section class="layout_padding design_layout">
-         <div class="container">
+         <div class="container wow fadeInDown">
             <div class="row">
                <div class="col-md-7">
                   <div class="full">
@@ -203,64 +203,81 @@
                </div>
                <div class="col-md-5">
                   <div class="full heading_s1">
-                     <h3>Best<br>Decorating for<br>Your home</h3>
-                     <p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                     <h3>Makeover<br>Package</h3>
+                     <ul style="list-style: circle;">
+                        <li><p class="mb-2">Home Styling</p></li>
+                        <li><p class="mb-2">For 600 - 900 sf</p></li>
+                        <li><p class="mb-2">Increase Rental Income > 40%</p></li>
+                     </ul>
                   </div>
                   <div class="full">
-                     <a class="read_more_bt" href="#">Get A Quote</a>
+                     <a class="read_more_bt" href="packages.html">View All</a>
                   </div>
                </div>
             </div>
          </div>
       </section>
       <!-- end section -->
-      <!-- section -->
-      <section class="layout_padding">
-         <div class="container">
+
+      <!-- 'Packages' section -->
+      <section class="layout_padding" id="packages">
+         <div class="container wow fadeInDown">
             <div class="row">
                <div class="col-md-12">
                   <div class="full heading_s1">
-                     <h3>Latest News</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                     <h3>Packages</h3>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-6 col-12">
                   <div class="blog_style">
-                     <div class="full news_blog">
-                        <img src="images/blog1.png" alt="#" />
+                     <div class="full news_blog mb-3">
+                        <img src="images/package_img1.png" alt="#" />
                      </div>
                      <div class="full post_colum">
                         <ul>
-                           <li>Post By : Evonyee</li>
-                           <li><a href="#">Like <img src="images/like_btn.png" alt="#" /></a></li>
-                           <li><a href="#">Comment <img src="images/msg_btn.png" alt="#" /></a></li>
-                           <li><a href="#">Share <img src="images/Share_btn.png" alt="#" /></a></li>
+                           <li>Post By : HOMIS</li>
                         </ul>
                      </div>
-                     <div class="full">
-                        <h3>Clean and Decorating office..</h3>
-                        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore consectetur adipiscing elit, ad minim veniam, quis nostrud exercitation</p>
+                     <div class="full mb-2">
+                        <h3>Package 1 - Living + Dining Hall</h3>
+                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 10,900</span>
+                        <br>
+                        <br>
+                        <ul class="ml-4" style="list-style: circle;">
+                           <li><p>For owner with lower budget.</p></li>
+                           <li><p>Very appealing for marketing.</p></li>
+                           <li><p>Leave the rooms empty for tenant to enjoy flexibility of decoration.</p></li>
+                        </ul>
+                     </div>
+                     <div class="full d-flex justify-content-center">
+                        <a class="read_more_bt" href="about.html">Read More</a>
                      </div>
                   </div>
                </div>
-               <div class="col-md-6">
+               <div class="col-md-6 col-12">
                   <div class="blog_style">
-                     <div class="full news_blog">
-                        <img src="images/blog2.png" alt="#" />
+                     <div class="full news_blog mb-3">
+                        <img src="images/package_img2.png" alt="#" />
                      </div>
                      <div class="full post_colum">
                         <ul>
-                           <li>Post By : Evonyee</li>
-                           <li><a href="#">Like <img src="images/like_btn.png" alt="#" /></a></li>
-                           <li><a href="#">Comment <img src="images/msg_btn.png" alt="#" /></a></li>
-                           <li><a href="#">Share <img src="images/Share_btn.png" alt="#" /></a></li>
+                           <li>Post By : HOMIS</li>
                         </ul>
                      </div>
-                     <div class="full">
-                        <h3>Lighting and Decorating office..</h3>
-                        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore consectetur adipiscing elit, ad minim veniam, quis nostrud exercitation</p>
+                     <div class="full pb-2">
+                        <h3>Package 2 - Living + Dining Hall + Masterroom</h3>
+                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 15,800</span>
+                        <br>
+                        <br>
+                        <ul class="ml-4" style="list-style: circle;">
+                           <li><p>For owner with medium budget.</p></li>
+                           <li><p>Leave 1 medium room empty for tenants to design according to their needs.</p></li>
+                        </ul>
+                     </div>
+                     <div class="full d-flex justify-content-center">
+                        <a class="read_more_bt" href="about.html">Read More</a>
                      </div>
                   </div>
                </div>
@@ -268,13 +285,14 @@
          </div>
       </section>
       <!-- end section -->
-      <!-- section -->
-      <section class="layout_padding">
+
+      <!-- 'Contact Us' section -->
+      <!-- <section class="layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="full heading_s1">
-                     <h3>Request A Call Back</h3>
+                     <h3>Contact Us</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                   </div>
                </div>
@@ -312,10 +330,11 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- end section -->
-      <!-- section -->
-      <section class="layout_padding">
+
+      <!-- 'Testimonial 'section -->
+      <!-- <section class="layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -393,8 +412,9 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- end section -->
+
       <!-- end footer -->
       <footer>
          <div class="container-fluid">
@@ -419,12 +439,10 @@
                               </div>
                               <div class="full">
                                  <ul class="footer_link">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">What we do</a></li>
-                                    <li><a href="#">Testimonial</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#aboutUs">About Us</a></li>
+                                    <li><a href="#whyUs">Why Us</a></li>
+                                    <li><a href="#packages">Packages</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -452,19 +470,19 @@
                                        <div class="col-sm-4">
                                           <div class="full cont_info">
                                              <i class="fa fa-map-marker"></i>
-                                             <span>Location</span>
+                                             <span>Klang Valley, Selangor <sup>MY</sup></span>
                                           </div>
                                        </div>
                                        <div class="col-sm-4">
                                           <div class="full cont_info">
                                              <i class="fa fa-phone"></i>
-                                             <span>Call +01 1234 567 890</span>
+                                             <span>016 7173 814</span>
                                           </div>
                                        </div>
                                        <div class="col-sm-4">
                                           <div class="full cont_info">
                                              <i class="fa fa-envelope" style="font-size: 17px;"></i>
-                                             <span>demo@gmail.com</span>
+                                             <span>homismakeover@gmail.com</span>
                                           </div>
                                        </div>
                                     </div>
@@ -479,6 +497,7 @@
          </div>
       </footer>
       <!-- end footer -->
+
       <!-- cpy -->
       <div class="cpy">
          <div class="container">
@@ -486,11 +505,11 @@
                <div class="col-md-12">
                   <div class="full center">
                      <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/homis_makeover/" target="_blank"><i class="fa fa-instagram"></i> homis_makeover</a></li>
+                        <!-- <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> -->
                      </ul>
                   </div>
                   <div class="full text_align_center">
@@ -502,9 +521,10 @@
       </div>
       <!-- end cpy -->
 
-      <a  class="whats-app" href="#" target="_blank">
+      <a  class="whats-app" href="https://wa.link/qepe3h" target="_blank">
          <i class="fa fa-whatsapp my-float"></i>
      </a>
+
       <!-- jQuery (necessary for Bootstrap's JavaScript) -->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
