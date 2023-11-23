@@ -1353,7 +1353,7 @@ section .social_icons {
 
 .banner-slider {
     height: auto;
-    /* background-image: url('../img/slider1.png'); */
+    background-image: url('../images/home_img.jpeg');
     background-color: #B0A695;
     width: 100%;
     background-size: cover;
@@ -1365,7 +1365,7 @@ section .social_icons {
 
 .left_blog_top h3 {
     font-size: 95px;
-    color: #4c4c4b;
+    color: #F3EEEA;
     text-transform: uppercase;
     font-family: 'Righteous', cursive;
     line-height: 95px;
@@ -1373,7 +1373,7 @@ section .social_icons {
 }
 
 .left_blog_top {
-    background: #f7f8f8;
+    /* background: #f7f8f8; */
     width: 815px;
     height: 585px;
     padding-left: 220px;
@@ -1386,8 +1386,7 @@ section .social_icons {
 }
 
 .left_blog_top p {
-    color: 
-    #1b1b1b;
+    color: #F3EEEA;
     font-size: 17px;
     text-transform: uppercase;
     line-height: normal;
