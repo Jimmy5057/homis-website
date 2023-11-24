@@ -1363,6 +1363,18 @@ section .social_icons {
     background-attachment: fixed;
 }
 
+@supports ( -webkit-touch-callout : none) {
+    .banner-slider {
+        background-attachment:scroll
+    }
+}
+
+@supports not ( -webkit-touch-callout : none) {
+    .banner-slider {
+        background-attachment: fixed;
+    }
+}
+
 .left_blog_top h3 {
     font-size: 6rem;
     color: #F3EEEA;
