@@ -171,6 +171,26 @@ function myFunction() {
 
 $(document).ready(function() {
 
+  
+    /** theme slider **/
+
+    var themeOwl = $('.theme-owl-carousel');
+    themeOwl.owlCarousel({
+        items:1,
+        loop:true,
+        margin:500,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false
+    });
+
+    $('.play').on('click',function(){
+      themeOwl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+      themeOwl.trigger('stop.owl.autoplay')
+    })
+
     /** slider 1 **/
 
     $('.owl-carousel-team').owlCarousel({
@@ -271,11 +291,20 @@ $(function () {
 
 /** sidebar **/
 
-   function openNav() {
-             document.getElementById("mySidenav").style.width = "750px";
-         }
-         
-         function closeNav() {
-             document.getElementById("mySidenav").style.width = "0";
-         }
+function openNav() {
+    if (screen.width < 1200) {
+      document.getElementById("mySidenav").classList.add("w-100")
+    } else {
+      document.getElementById("mySidenav").classList.add("w-25")
+    }
+    
+}
+      
+function closeNav() {
+  if (screen.width < 1200) {
+    document.getElementById("mySidenav").classList.remove("w-100")
+  } else {
+    document.getElementById("mySidenav").classList.remove("w-25")
+  }
+}
 
