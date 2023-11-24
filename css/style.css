@@ -1367,10 +1367,18 @@ section .social_icons {
     .banner-slider {
         background-attachment:scroll
     }
+
+    #inner_pade.banner-slider {
+        background-attachment:scroll
+    }
 }
 
 @supports not ( -webkit-touch-callout : none) {
     .banner-slider {
+        background-attachment: fixed;
+    }
+
+    #inner_pade.banner-slider {
         background-attachment: fixed;
     }
 }
