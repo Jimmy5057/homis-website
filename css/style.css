@@ -8709,7 +8709,7 @@ form button:focus {
 
 .decorate_blog_bt {
     color: #525151;
-    width: 185px;
+    width: auto;
     height: 55px;
     line-height: 55px;
     text-align: center;
