@@ -10,14 +10,97 @@ new WOW().init();
 
 /**== loader js ==**/
 
-$("body").prepend('<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
-$(window).on('load', function() { // makes sure the whole site is loaded 
-    $('#status').fadeOut(); // will first fade out the loading animation 
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-    $('body').delay(350).css({
-        'overflow': 'visible'
+// Only run preloader code if we're on index.html
+if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+    // Add CSS styles through JavaScript
+    const styleSheet = document.createElement("style");
+    styleSheet.textContent = `
+        #preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(119, 107, 93, 0.9);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .counter-wrapper {
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .counter-content {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    `;
+    document.head.appendChild(styleSheet);
+
+    // Preloader HTML
+    $("body").prepend(`
+        <div id="preloader">
+            <div class="counter-wrapper">
+                <div class="counter-content" style="text-align: center; color: #EBE3D5;">
+                    <span id="counter" style="font-size: 48px; font-weight: bold;">0</span>
+                    <span style="font-size: 48px; font-weight: bold;"> units</span>
+                    <p style="font-size: 24px; margin-top: 10px; color: #B0A695;">Done since 2022</p>
+                </div>
+            </div>
+        </div>
+    `);
+
+    // Counter animation function
+    function animateCounter(callback) {
+        const counter = $('#counter');
+        const target = 210;
+        const duration = 2000; // 2 seconds
+        const steps = 50;
+        const increment = target / steps;
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+                if (callback) callback();
+            }
+            counter.text(`> ${Math.round(current)}`);
+        }, duration / steps);
+    }
+
+    // Window load handler
+    $(window).on('load', function() {
+        // Start counter animation
+        animateCounter(() => {
+            // After counter animation completes, fade out the preloader
+            setTimeout(() => {
+                $('#preloader').fadeOut('slow');
+                $('body').css({
+                    'overflow': 'visible'
+                });
+            }, 500);
+        });
     });
-})
+}
 
 /**== menu js ==**/
 
