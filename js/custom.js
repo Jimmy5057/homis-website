@@ -54,19 +54,6 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname 
     `;
     document.head.appendChild(styleSheet);
 
-    // Preloader HTML
-    $("body").prepend(`
-        <div id="preloader">
-            <div class="counter-wrapper">
-                <div class="counter-content" style="text-align: center; color: #EBE3D5;">
-                    <span id="counter" style="font-size: 48px; font-weight: bold;">0</span>
-                    <span style="font-size: 48px; font-weight: bold;"> units</span>
-                    <p style="font-size: 24px; margin-top: 10px; color: #B0A695;">Done since 2022</p>
-                </div>
-            </div>
-        </div>
-    `);
-
     // Counter animation function
     function animateCounter(callback) {
         const counter = $('#counter');
@@ -89,6 +76,20 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname 
 
     // Window load handler
     $(window).on('load', function() {
+
+        // Preloader HTML
+        $("body").prepend(`
+          <div id="preloader">
+              <div class="counter-wrapper">
+                  <div class="counter-content" style="text-align: center; color: #EBE3D5;">
+                      <span id="counter" style="font-size: 48px; font-weight: bold;">0</span>
+                      <span style="font-size: 48px; font-weight: bold;"> units</span>
+                      <p style="font-size: 24px; margin-top: 10px; color: #B0A695;">Done since 2022</p>
+                  </div>
+              </div>
+          </div>
+        `);
+
         // Start counter animation
         animateCounter(() => {
             // After counter animation completes, fade out the preloader
