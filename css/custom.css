@@ -45,3 +45,233 @@
 .my-float {
     margin-top: 0;
 }
+
+/* Theme Carousel Styles */
+.theme-carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.theme-slide {
+    display: none;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.theme-slide.active {
+    display: block;
+}
+
+.theme-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theme-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(119, 107, 93, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-nav-btn:hover {
+    background-color: rgba(119, 107, 93, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.theme-prev {
+    left: 10px;
+}
+
+.theme-next {
+    right: 10px;
+}
+
+.theme-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.theme-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-dot.active {
+    background-color: #776B5D;
+}
+
+.theme-dot:hover {
+    background-color: #776B5D;
+}
+
+/* Package Image Styles */
+.blog_style .news_blog img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Testimonial Styles */
+.testimonial-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(119, 107, 93, 0.1);
+    border: 1px solid rgba(119, 107, 93, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(119, 107, 93, 0.15);
+}
+
+.testimonial-content {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-author {
+    border-top: 1px solid rgba(119, 107, 93, 0.1);
+    padding-top: 15px;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: #776B5D;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.testimonial-author .location {
+    color: #666;
+    font-size: 14px;
+    display: block;
+}
+
+/* Team Styles */
+.team-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-hero-img {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(119, 107, 93, 0.15);
+}
+
+.team-member-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(119, 107, 93, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(119, 107, 93, 0.2);
+}
+
+.team-member-img {
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .team-member-img img {
+    transform: scale(1.05);
+}
+
+.team-member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-member-info h4 {
+    color: #776B5D;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.team-member-info .role {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Partners Section Styles */
+.partners-section {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+    border-top: 1px solid rgba(119, 107, 93, 0.1);
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    height: 100px;
+    width: auto;
+    max-width: 300px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}

@@ -91,9 +91,9 @@
                                  <a class="bt_main d-block" href="contact.html">Contact Us</a>
                               </div>
                            </div>
-                           <div class="right_blog_top d-xl-block d-none">
+                           <!-- <div class="right_blog_top d-xl-block d-none">
                               <img src="images/slider_img2.jpg" alt="#" height="572px" width="381px"/>
-                           </div>
+                           </div> -->
                         </div>
                      </div>
                   </div>
@@ -136,8 +136,8 @@
       <!-- end section -->
 
       <!-- 'Why Us' section -->
-      <section class="layout_padding" style="background-image: url(img/bg_why_us.png);" id="whyUs">
-         <div class="container mb-5 wow fadeInDown px-xl-0 px-5" style="min-height: 650px;">
+      <section class="layout_padding" style="background-image: url(img/bg_why_us.png); background-size: cover; background-position: right; background-repeat: no-repeat;" id="whyUs">
+         <div class="container wow fadeInDown px-xl-0 px-5">
             <div class="row">
                <div class="col-md-12">
                   <div class="full heading_s1">
@@ -149,19 +149,25 @@
             <div class="row mb-5">
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/why_us_img1.png" alt="#" />
+                     <div class="text-center" style="padding: 20px 15px;">
+                        <i class="fa fa-paint-brush" style="font-size: 60px; color: #776B5D;"></i>
+                     </div>
                      <a class="decorate_blog_bt" href="about.html">Free Design</a>
                   </div>
                </div>
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/why_us_img2.png" alt="#" />
+                     <div class="text-center" style="padding: 20px 15px;">
+                        <i class="fa fa-clock-o" style="font-size: 60px; color: #776B5D;"></i>
+                     </div>
                      <a class="decorate_blog_bt" href="about.html">Ready in 2 weeks</a>
                   </div>
                </div>
                <div class="col-md-4 col-12">
                   <div class="full decorate_blog">
-                     <img src="images/why_us_img3.png" alt="#" />
+                     <div class="text-center" style="padding: 20px 15px;">
+                        <i class="fa fa-money" style="font-size: 60px; color: #776B5D;"></i>
+                     </div>
                      <a class="decorate_blog_bt" href="about.html">Affordable</a>
                   </div>
                </div>
@@ -172,7 +178,7 @@
 
       <!-- 'Theme' section -->
       <section class="layout_padding" id="themes">
-         <div class="container mb-5 wow fadeInDown px-xl-0 px-5" style="min-height: 1000px;">
+         <div class="container mb-5 wow fadeInDown px-xl-0 px-5">
             <div class="row">
                <div class="col-md-12">
                   <div class="full heading_s1">
@@ -181,318 +187,189 @@
                </div>
             </div>
             <div class="row mb-5">
-               <div class="col-12 px-5">
-                  <div class="theme-owl-carousel">
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/warm_earthy/warm_earthy_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/warm_earthy/warm_earthy_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/warm_earthy/warm_earthy_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 d-xl-block d-none my-1">
-                              <img src="images/theme_img/warm_earthy/warm_earthy_img4.png" alt="#" />
-                           </div>
+               <!-- Theme 1: Beige Waves -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/beige_waves/L1 013.jpeg" alt="Beige Waves" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_waves/L1 001.jpeg" alt="Beige Waves" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_waves/MB 001.jpeg" alt="Beige Waves" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_waves/MB2 009.jpeg" alt="Beige Waves" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 1)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 1)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 1)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 1)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 1)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 1)"></span>
+                        </div>
+                     </div>
+                     <a class="decorate_blog_bt" href="themes.html#warm-earthy">Beige Waves</a>
+                  </div>
+               </div>
 
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#warm-earthy">Warm Earthy</a>
-                           </div>
+               <!-- Theme 2: Lune Blanche -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/lune_blanche/IMG_1577.jpeg" alt="Lune Blanche" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/lune_blanche/IMG_1606.jpeg" alt="Lune Blanche" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/lune_blanche/IMG_1612.jpeg" alt="Lune Blanche" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/lune_blanche/IMG_1538-Edit.jpeg" alt="Lune Blanche" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 2)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 2)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 2)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 2)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 2)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 2)"></span>
                         </div>
                      </div>
+                     <a class="decorate_blog_bt" href="themes.html#lune-blanche">Lune Blanche</a>
+                  </div>
+               </div>
 
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/wabisabi_halo/wabisabi_halo_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/wabisabi_halo/wabisabi_halo_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/wabisabi_halo/wabisabi_halo_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/wabisabi_halo/wabisabi_halo_img4.png" alt="#" />
-                           </div>
+               <!-- Theme 3: Nihon Essence -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/nihon_essence/IMG_9584.jpg" alt="Nihon Essence" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nihon_essence/IMG_9559.jpg" alt="Nihon Essence" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nihon_essence/IMG_9569.jpg" alt="Nihon Essence" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nihon_essence/IMG_9554.jpg" alt="Nihon Essence" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 3)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 3)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 3)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 3)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 3)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 3)"></span>
+                        </div>
+                     </div>
+                     <a class="decorate_blog_bt" href="themes.html#nihon-essence">Nihon Essence</a>
+                  </div>
+               </div>
 
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#wabisabi-halo">Wabisabi-Halo Sunday</a>
-                           </div>
+               <!-- Theme 4: Mono Glam -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/mono_glam/IMG_3183.jpg" alt="Mono Glam" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/mono_glam/IMG_3177.jpg" alt="Mono Glam" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/mono_glam/IMG_3196.jpg" alt="Mono Glam" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/mono_glam/IMG_3189.jpg" alt="Mono Glam" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 4)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 4)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 4)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 4)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 4)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 4)"></span>
                         </div>
                      </div>
+                     <a class="decorate_blog_bt" href="themes.html#mono-glam">Mono Glam</a>
+                  </div>
+               </div>
 
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/the_french/the_french_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/the_french/the_french_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/the_french/the_french_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/the_french/the_french_img4.png" alt="#" />
-                           </div>
+               <!-- Theme 5: Beige Luxe -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/beige_luxe/IMG_8776.jpg" alt="Beige Luxe" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_luxe/IMG_8756.jpg" alt="Beige Luxe" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_luxe/IMG_8766.jpg" alt="Beige Luxe" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/beige_luxe/IMG_8778.jpg" alt="Beige Luxe" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 5)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 5)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 5)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 5)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 5)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 5)"></span>
+                        </div>
+                     </div>
+                     <a class="decorate_blog_bt" href="themes.html#beige-luxe">Beige Luxe</a>
+                  </div>
+               </div>
 
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#the-french">The French</a>
-                           </div>
+               <!-- Theme 6: Nostalgic Chic -->
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="full decorate_blog">
+                     <div class="theme-carousel">
+                        <div class="theme-slide active">
+                           <img src="images/theme_img/nostalgic_chic/IMG_0547.JPG" alt="Nostalgic Chic" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nostalgic_chic/IMG_0537.JPG" alt="Nostalgic Chic" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nostalgic_chic/IMG_0541.JPG" alt="Nostalgic Chic" class="w-100" />
+                        </div>
+                        <div class="theme-slide">
+                           <img src="images/theme_img/nostalgic_chic/IMG_0548.JPG" alt="Nostalgic Chic" class="w-100" />
+                        </div>
+                        <button class="theme-nav-btn theme-prev" onclick="changeSlide(-1, 6)">❮</button>
+                        <button class="theme-nav-btn theme-next" onclick="changeSlide(1, 6)">❯</button>
+                        <div class="theme-nav">
+                           <span class="theme-dot active" onclick="currentSlide(1, 6)"></span>
+                           <span class="theme-dot" onclick="currentSlide(2, 6)"></span>
+                           <span class="theme-dot" onclick="currentSlide(3, 6)"></span>
+                           <span class="theme-dot" onclick="currentSlide(4, 6)"></span>
                         </div>
                      </div>
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/farm_house/farm_house_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/farm_house/farm_house_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/farm_house/farm_house_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/farm_house/farm_house_img4.png" alt="#" />
-                           </div>
-
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#farm-house">The Farm House</a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/roasted_caramel/roasted_caramel_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/roasted_caramel/roasted_caramel_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/roasted_caramel/roasted_caramel_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/roasted_caramel/roasted_caramel_img4.png" alt="#" />
-                           </div>
-                           
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#roasted-caramel">Roasted Caramel</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/natural_earth/natural_earth_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/natural_earth/natural_earth_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/natural_earth/natural_earth_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/natural_earth/natural_earth_img4.png" alt="#" />
-                           </div>
-                           
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#natural-earth">Natural Earth</a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_jennifer/muji_jennifer_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_jennifer/muji_jennifer_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_jennifer/muji_jennifer_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/muji_jennifer/muji_jennifer_img4.png" alt="#" />
-                           </div>
-                           
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#muji-jennifer">Muji Jennifer</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_tone/muji_tone_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_tone/muji_tone_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/muji_tone/muji_tone_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1 d-xl-block d-none">
-                              <img src="images/theme_img/muji_tone/muji_tone_img4.png" alt="#" />
-                           </div>
-                           
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#muji-tone">Muji Tone</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/kenwingston/kenwingston_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/kenwingston/kenwingston_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/kenwingston/kenwingston_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my- d-xl-block d-none">
-                              <img src="images/theme_img/kenwingston/kenwingston_img4.png" alt="#" />
-                           </div>
-                                                      
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#kenwingston">Kenwingston Flower Creamy</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/joey_creamy/joey_creamy_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/joey_creamy/joey_creamy_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/joey_creamy/joey_creamy_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my- d-xl-block d-none">
-                              <img src="images/theme_img/joey_creamy/joey_creamy_img4.png" alt="#" />
-                           </div>
-                                                      
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#joey-creamy">Joey Creamy Cozy</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/cutie_creamy/cutie_creamy_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/cutie_creamy/cutie_creamy_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/cutie_creamy/cutie_creamy_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my- d-xl-block d-none">
-                              <img src="images/theme_img/cutie_creamy/cutie_creamy_img4.png" alt="#" />
-                           </div>
-                                                      
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#cutie-creamy">Cutie Creamy</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/black_white/black_white_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/black_white/black_white_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/black_white/black_white_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my- d-xl-block d-none">
-                              <img src="images/theme_img/black_white/black_white_img4.png" alt="#" />
-                           </div>
-                                                      
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#black-white">Black & White</a>
-                           </div>
-                        </div>
-                     </div>
-                     
-                     <div class="full decorate_blog item">
-                        <div class="row">
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/aderlene/aderlene_img1.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/aderlene/aderlene_img2.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my-1">
-                              <img src="images/theme_img/aderlene/aderlene_img3.png" alt="#" />
-                           </div>
-                           <div class="col-xl-6 col-12 my-xl-3 my- d-xl-block d-none">
-                              <img src="images/theme_img/aderlene/aderlene_img4.png" alt="#" />
-                           </div>
-                                                      
-                           <div class="col-12">
-                              <a class="decorate_blog_bt" href="themes.html#aderlene">Adelene Trion Creamy</a>
-                           </div>
-                        </div>
-                     </div>
-                                          
-                 </div>
+                     <a class="decorate_blog_bt" href="themes.html#nostalgic-chic">Nostalgic Chic</a>
+                  </div>
                </div>
             </div>
             <div class="row">
                <div class="col-sm-12">
                   <div class="d-flex justify-content-center">
-                     <a class="read_more_bt" href="themes.html">Explore More</a>
+                     <a class="read_more_bt" href="pdf/HOMIS portfolio 2025.pdf" download>Explore More</a>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <!-- end section -->
-
-      <!-- 'Makeover package' section -->
-      <!-- <section class="layout_padding design_layout">
-         <div class="container wow fadeInDown">
-            <div class="row">
-               <div class="col-md-7">
-                  <div class="full">
-                  </div>
-               </div>
-               <div class="col-md-5">
-                  <div class="full heading_s1">
-                     <h3>Makeover<br>Package</h3>
-                     <ul style="list-style: circle;">
-                        <li><p class="mb-2">Home Styling</p></li>
-                        <li><p class="mb-2">For 600 - 900 sf</p></li>
-                        <li><p class="mb-2">Increase Rental Income > 40%</p></li>
-                     </ul>
-                  </div>d-none
-                  <div class="full">
-                     <a class="read_more_bt" href="packages.html">View All</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section> -->
       <!-- end section -->
 
       <!-- 'Packages' section -->
@@ -506,44 +383,233 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-xl-6 col-12">
+               <div class="col-xl-4 col-12 mb-4">
                   <div class="blog_style">
                      <div class="full news_blog mb-3">
-                        <img class="w-100" src="images/package_img1.png" alt="#" />
+                        <img class="w-100" src="images/package-1.jpeg" alt="Studio Essentials" />
                      </div>
                      <div class="full mb-2">
-                        <h3>Package 1 - Living + Dining Hall</h3>
-                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 10,900</span>
+                        <h3>Studio Essentials</h3>
+                        <p class="text-muted mb-2"><em>For studio units</em></p>
+                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 14,800</span>
                         <br>
                         <br>
                         <ul class="ml-4" style="list-style: circle;">
-                           <li><p>For owner with lower budget.</p></li>
-                           <li><p>Very appealing for marketing.</p></li>
-                           <li><p>Leave the rooms empty for tenant to enjoy flexibility of decoration.</p></li>
+                           <li><p>Smart, space-saving design to enhance aesthetics without clutter</p></li>
+                           <li><p>Essential, stylish furniture for a modern and functional look</p></li>
+                           <li><p>Budget-friendly transformation for maximum impact</p></li>
                         </ul>
-                     </div>
-                     <div class="full d-flex justify-content-center">
-                        <a class="read_more_bt" href="about.html">Read More</a>
                      </div>
                   </div>
                </div>
-               <div class="col-xl-6 col-12">
+               <div class="col-xl-4 col-12 mb-4">
                   <div class="blog_style">
                      <div class="full news_blog mb-3">
-                        <img class="w-100" src="images/package_img2.png" alt="#" />
+                        <img class="w-100" src="images/package-2.jpeg" alt="Smart Space Package" />
                      </div>
-                     <div class="full pb-2">
-                        <h3>Package 2 - Living + Dining Hall + Masterroom</h3>
-                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 16,800</span>
+                     <div class="full mb-2">
+                        <h3>Smart Space Package</h3>
+                        <p class="text-muted mb-2"><em>For 600-900 sq. ft. homes</em></p>
+                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 17,800</span>
                         <br>
                         <br>
                         <ul class="ml-4" style="list-style: circle;">
-                           <li><p>For owner with medium budget.</p></li>
-                           <li><p>Leave 1 medium room empty for tenants to design according to their needs.</p></li>
+                           <li><p>Thoughtfully selected furniture to elevate the Living Room, Dining Area, and Master Bedroom</p></li>
+                           <li><p>One small room left empty for tenants to customize, keeping costs efficient</p></li>
+                           <li><p>Balanced makeover that enhances appearance while staying cost-effective</p></li>
                         </ul>
                      </div>
-                     <div class="full d-flex justify-content-center">
-                        <a class="read_more_bt" href="about.html">Read More</a>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-12 mb-4">
+                  <div class="blog_style">
+                     <div class="full news_blog mb-3">
+                        <img class="w-100" src="images/package-3.jpeg" alt="Grand Living Package" />
+                     </div>
+                     <div class="full mb-2">
+                        <h3>Grand Living Package</h3>
+                        <p class="text-muted mb-2"><em>For 1,000+ sq. ft. homes</em></p>
+                        <span class="h4 font-weight-bold" style="color: #776B5D;">RM 19,800</span>
+                        <br>
+                        <br>
+                        <ul class="ml-4" style="list-style: circle;">
+                           <li><p>Complete transformation of Living Room, Dining Area, and Master Bedroom</p></li>
+                           <li><p>Optimized design to make larger spaces feel stylish, cohesive, and inviting</p></li>
+                           <li><p>Maximized aesthetics with minimal cost, ensuring a premium look without overspending</p></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end section -->
+
+      <!-- 'Meet the Team' section -->
+      <section class="layout_padding" id="team">
+         <div class="container wow fadeInDown">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full heading_s1">
+                     <h3>Meet the Team</h3>
+                     <p>Our passionate team of interior styling experts</p>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="row mb-5">
+               <div class="col-12">
+                  <div class="team-hero">
+                     <img src="images/team_img/team.JPG" alt="HOMIS Team" class="w-100 team-hero-img" />
+                  </div>
+               </div>
+            </div> -->
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <div class="team-member-card">
+                     <div class="team-member-img">
+                        <img src="images/team_img/Pauline (Founder & Creative Director).jpg" alt="Pauline" class="w-100" />
+                     </div>
+                     <div class="team-member-info">
+                        <h4>Pauline</h4>
+                        <p class="role">Founder & Creative Director</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <div class="team-member-card">
+                     <div class="team-member-img">
+                        <img src="images/team_img/Khor Yan (Interior Stylist & Designer).jpg" alt="Khor Yan" class="w-100" />
+                     </div>
+                     <div class="team-member-info">
+                        <h4>Khor Yan</h4>
+                        <p class="role">Interior Stylist & Designer</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <div class="team-member-card">
+                     <div class="team-member-img">
+                        <img src="images/team_img/Kakah (Interior Stylist).jpg" alt="Kakah" class="w-100" />
+                     </div>
+                     <div class="team-member-info">
+                        <h4>Kakah</h4>
+                        <p class="role">Interior Stylist</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <div class="team-member-card">
+                     <div class="team-member-img">
+                        <img src="images/team_img/Joey (Interior Stylist).jpg" alt="Joey" class="w-100" />
+                     </div>
+                     <div class="team-member-info">
+                        <h4>Joey</h4>
+                        <p class="role">Interior Stylist</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end section -->
+
+      <!-- 'Testimonials' section -->
+      <section class="layout_padding" id="testimonials">
+         <div class="container wow fadeInDown">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full heading_s1">
+                     <h3>Testimonials</h3>
+                     <p>What our clients say about our services</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"Tq Kakah, rumah cantik🙏"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Marliana</strong>
+                        <span class="location">📍The Habitus</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"我的unit一下子就出租了，超快，被很多agent称赞，真的得谢谢你Khor Yan！"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Jayden Liew</strong>
+                        <span class="location">📍Metro Cheras</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"Hey Pauline! just dropping a text to say thank you so much to you & Joey! Really lovely design and it's so my type❤️feel so at home now"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Mandy</strong>
+                        <span class="location">📍Pacific Star</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"你把我房子弄得很漂亮，真的很美！谢谢"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Ken</strong>
+                        <span class="location">📍Breezeway</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"Kakah yes so far everything okay, i love it!"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Angelica</strong>
+                        <span class="location">📍Verando Residence</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"Saw the unit. Love it. Well done. Great job👍🏻👍🏻Thx Joey"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Mr.Low</strong>
+                        <span class="location">📍Panorama Residence</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"Thanks for your reminder and service, we are satisfied with your follow up service, thank you Kakah"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Eunise</strong>
+                        <span class="location">📍Damansara Seresta</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <p>"谢谢您们哦。我很喜欢"</p>
+                     </div>
+                     <div class="testimonial-author">
+                        <strong>Lily Tan</strong>
+                        <span class="location">📍Mossaz</span>
                      </div>
                   </div>
                </div>
@@ -764,6 +830,22 @@
          </div>
       </footer>
       <!-- end footer -->
+
+      <!-- Partners Section -->
+      <div class="partners-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="full text_align_center">
+                     <div class="partner-logos">
+                        <img src="images/partner1.png" alt="Partner 1" class="partner-logo" />
+                        <img src="images/partner2.png" alt="Partner 2" class="partner-logo" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- cpy -->
       <div class="cpy">

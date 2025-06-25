@@ -392,3 +392,73 @@ function closeNav() {
   }
 }
 
+/**== Theme Carousel Function ==**/
+
+function currentSlide(slideIndex, themeIndex) {
+    // Get all slides and dots for this specific theme
+    const themeCarousel = document.querySelectorAll('.theme-carousel')[themeIndex - 1];
+    const slides = themeCarousel.querySelectorAll('.theme-slide');
+    const dots = themeCarousel.querySelectorAll('.theme-dot');
+    
+    // Hide all slides and remove active class from dots
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show the selected slide and activate the corresponding dot
+    slides[slideIndex - 1].classList.add('active');
+    dots[slideIndex - 1].classList.add('active');
+}
+
+function changeSlide(direction, themeIndex) {
+    // Get all slides and dots for this specific theme
+    const themeCarousel = document.querySelectorAll('.theme-carousel')[themeIndex - 1];
+    const slides = themeCarousel.querySelectorAll('.theme-slide');
+    const dots = themeCarousel.querySelectorAll('.theme-dot');
+    
+    // Find current active slide
+    const activeSlide = themeCarousel.querySelector('.theme-slide.active');
+    const currentIndex = Array.from(slides).indexOf(activeSlide);
+    
+    // Calculate new index
+    let newIndex = currentIndex + direction;
+    
+    // Handle wrap-around
+    if (newIndex >= slides.length) {
+        newIndex = 0;
+    } else if (newIndex < 0) {
+        newIndex = slides.length - 1;
+    }
+    
+    // Hide all slides and remove active class from dots
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show the new slide and activate the corresponding dot
+    slides[newIndex].classList.add('active');
+    dots[newIndex].classList.add('active');
+}
+
+// Auto-advance slides for each theme
+function autoAdvanceSlides() {
+    const themeCarousels = document.querySelectorAll('.theme-carousel');
+    
+    themeCarousels.forEach((carousel, themeIndex) => {
+        const slides = carousel.querySelectorAll('.theme-slide');
+        const dots = carousel.querySelectorAll('.theme-dot');
+        const activeSlide = carousel.querySelector('.theme-slide.active');
+        const currentIndex = Array.from(slides).indexOf(activeSlide);
+        const nextIndex = (currentIndex + 1) % slides.length;
+        
+        // Hide current slide and remove active class from dot
+        activeSlide.classList.remove('active');
+        dots[currentIndex].classList.remove('active');
+        
+        // Show next slide and activate corresponding dot
+        slides[nextIndex].classList.add('active');
+        dots[nextIndex].classList.add('active');
+    });
+}
+
+// Start auto-advance every 3 seconds
+// setInterval(autoAdvanceSlides, 3000);
+
